@@ -1,0 +1,17 @@
+C:\Users\jramos\source\repos\Run.Azurite.NET\obj\Debug\net5.0\Run.Azurite.NET.csproj.AssemblyReference.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\obj\Debug\net5.0\Run.Azurite.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jramos\source\repos\Run.Azurite.NET\obj\Debug\net5.0\Run.Azurite.NET.AssemblyInfoInputs.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\obj\Debug\net5.0\Run.Azurite.NET.AssemblyInfo.cs
+C:\Users\jramos\source\repos\Run.Azurite.NET\obj\Debug\net5.0\Run.Azurite.NET.csproj.CoreCompileInputs.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\bin\Debug\net5.0\Run.Azurite.NET.deps.json
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\bin\Debug\net5.0\Run.Azurite.NET.dll
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\bin\Debug\net5.0\ref\Run.Azurite.NET.dll
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\bin\Debug\net5.0\Run.Azurite.NET.pdb
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.csproj.AssemblyReference.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.AssemblyInfoInputs.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.AssemblyInfo.cs
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.csproj.CoreCompileInputs.cache
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.dll
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\ref\Run.Azurite.NET.dll
+C:\Users\jramos\source\repos\Run.Azurite.NET\src\obj\Debug\net5.0\Run.Azurite.NET.pdb
