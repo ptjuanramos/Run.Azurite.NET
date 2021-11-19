@@ -1,34 +1,29 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Run.Azurite.NET.Proxies;
-using System;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace Run.Azurite.NET.Commands.Concrete
 {
     internal class CommandFactory : ICommandFactory
     {
-        private readonly IServiceProvider _serviceProvider;
+        private readonly IProcessProxy _processProxy;
 
-        public CommandFactory(IServiceProvider serviceProvider)
+        public CommandFactory(IProcessProxy processProxy)
         {
-            _serviceProvider = serviceProvider;
+            _processProxy = processProxy;
         }
 
         public ICommand GetCommand()
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                IProcessProxy processProxy = _serviceProvider.GetService<IProcessProxy>();
-                return new WindowsCommand(processProxy);
+                return new WindowsCommand(_processProxy);
 
             } else if(RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
-                return new LinuxCommand();
+                return new LinuxCommand(_processProxy);
 
             } else if(RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
             {
-                return new OsxCommand();
+                return new OsxCommand(_processProxy);
             }
 
             return null;

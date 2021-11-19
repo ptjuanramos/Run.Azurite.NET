@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Run.Azurite.NET
 {
-    public class LocalAzuriteHostedService : IHostedService
+    internal class LocalAzuriteHostedService : IHostedService
     {
         private readonly ILogger<LocalAzuriteHostedService> _logger;
         private readonly IAzuriteCommand _azuriteCommand;
@@ -24,6 +24,7 @@ namespace Run.Azurite.NET
                 {
                     _logger.LogError("Couldn't start azurite for some reason.");
                 }
+
             }, cancellationToken);
             
         }

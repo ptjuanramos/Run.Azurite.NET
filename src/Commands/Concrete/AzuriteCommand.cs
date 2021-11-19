@@ -16,6 +16,12 @@ namespace Run.Azurite.NET.Commands.Concrete
         public bool Start()
         {
             ICommand command = _commandFactory.GetCommand();
+            
+            if(command == null)
+            {
+                _logger.LogError("Couldn't find a way to run automatically the azurite in your OS.");
+                return false;
+            }
 
             _logger.LogInformation("Running azurite command");
             return command.Run("azurite");

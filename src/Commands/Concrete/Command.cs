@@ -1,0 +1,21 @@
+﻿using System.Diagnostics;
+
+namespace Run.Azurite.NET.Commands.Concrete
+{
+    internal abstract class Command : ICommand
+    {
+        public IProcessProxy _processProxy;
+
+        public Command(IProcessProxy processProxy)
+        {
+            _processProxy = processProxy;
+        }
+
+        protected abstract ProcessStartInfo GetProcessStartInfo(string command);
+
+        public bool Run(string command)
+        {
+            return _processProxy.Start(GetProcessStartInfo(command));
+        }
+    }
+}

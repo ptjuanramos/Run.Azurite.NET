@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Run.Azurite.NET.Commands.Concrete
 {
-    internal class OsxCommand : ICommand
+    internal class OsxCommand : Command
     {
-        public bool Run(string command)
+        public OsxCommand(IProcessProxy processProxy) : base(processProxy)
+        {
+        }
+
+        protected override ProcessStartInfo GetProcessStartInfo(string command)
         {
             throw new NotImplementedException();
         }

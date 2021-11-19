@@ -2,16 +2,14 @@
 
 namespace Run.Azurite.NET.Commands.Concrete
 {
-    internal class WindowsCommand : ICommand
+    internal class WindowsCommand : Command
     {
-        private readonly IProcessProxy _processProxy;
 
-        public WindowsCommand(IProcessProxy processProxy)
+        public WindowsCommand(IProcessProxy processProxy) : base(processProxy)
         {
-            _processProxy = processProxy;
         }
 
-        private static ProcessStartInfo GetProcessStartInfo(string command)
+        protected override ProcessStartInfo GetProcessStartInfo(string command)
         {
             return new ProcessStartInfo
             {
@@ -22,12 +20,6 @@ namespace Run.Azurite.NET.Commands.Concrete
                 FileName = "cmd.exe",
                 Arguments = "/C " + command
             };
-
-        }
-
-        public bool Run(string command)
-        {
-            return _processProxy.Start(GetProcessStartInfo(command));
         }
     }
 }
