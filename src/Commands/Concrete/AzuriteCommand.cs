@@ -26,5 +26,10 @@ namespace Run.Azurite.NET.Commands.Concrete
             _logger.LogInformation("Running azurite command");
             return command.Run("azurite");
         }
+
+        public bool Stop()
+        {
+            return true;
+        }
     }
 }

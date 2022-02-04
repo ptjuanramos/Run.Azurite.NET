@@ -18,7 +18,7 @@ namespace Run.Azurite.NET.Proxies
         public bool Start(ProcessStartInfo startInfo)
         {
             _process.StartInfo = startInfo;
-            _process.OutputDataReceived += ProcessOutputDataReceived;   
+            _process.OutputDataReceived += new DataReceivedEventHandler(ProcessOutputDataReceived);   
 
             bool startResult = _process.Start();
 

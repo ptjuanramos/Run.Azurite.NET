@@ -3,5 +3,7 @@
     public interface IAzuriteCommand
     {
         bool Start();
+
+        bool Stop();
     }
 }

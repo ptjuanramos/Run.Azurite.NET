@@ -11,15 +11,11 @@ namespace Run.Azurite.NET.Commands.Concrete
 
         protected override ProcessStartInfo GetProcessStartInfo(string command)
         {
-            return new ProcessStartInfo
-            {
-                RedirectStandardInput = true,
-                RedirectStandardOutput = true,
-                CreateNoWindow = true,
-                UseShellExecute = false,
-                FileName = "cmd.exe",
-                Arguments = "/C " + command
-            };
+            ProcessStartInfo startInfo = GetBaseStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C " + command;
+
+            return startInfo;
         }
     }
 }

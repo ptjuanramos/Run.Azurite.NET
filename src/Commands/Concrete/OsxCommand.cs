@@ -11,6 +11,10 @@ namespace Run.Azurite.NET.Commands.Concrete
 
         protected override ProcessStartInfo GetProcessStartInfo(string command)
         {
+            ProcessStartInfo startInfo = GetBaseStartInfo();
+            startInfo.FileName = "";
+
+            return startInfo;
             throw new NotImplementedException();
         }
     }
